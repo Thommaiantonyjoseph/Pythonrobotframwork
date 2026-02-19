@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.10.3 on win32)" generated="2026-02-19T20:38:26.306720" rpa="false" schemaversion="5">
+<suite id="s1" name="Return" source="C:\Users\thomm\PycharmProjects\pythonProject\tests\return.robot">
+<test id="s1-t1" name="Check Keyword Status" line="2">
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>5</arg>
+<arg>5</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2026-02-19T20:38:26.318221" elapsed="0.000000"/>
+</kw>
+<msg time="2026-02-19T20:38:26.318221" level="INFO">${status} = True</msg>
+<var>${status}</var>
+<arg>Should Be Equal</arg>
+<arg>5</arg>
+<arg>5</arg>
+<doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2026-02-19T20:38:26.318221" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Status is: ${status}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-02-19T20:38:26.318221" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2026-02-19T20:38:26.318221" elapsed="0.000000"/>
+</test>
+<test id="s1-t2" name="Check With Condition" line="6">
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Should Be Equal" owner="BuiltIn">
+<msg time="2026-02-19T20:38:26.318221" level="FAIL">5 != 3</msg>
+<arg>5</arg>
+<arg>3</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="FAIL" start="2026-02-19T20:38:26.318221" elapsed="0.000000">5 != 3</status>
+</kw>
+<msg time="2026-02-19T20:38:26.318221" level="INFO">${status} = False</msg>
+<var>${status}</var>
+<arg>Should Be Equal</arg>
+<arg>5</arg>
+<arg>3</arg>
+<doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2026-02-19T20:38:26.318221" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${status}">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Keyword Passed</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2026-02-19T20:38:26.318221" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-02-19T20:38:26.318221" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Keyword Failed</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-02-19T20:38:26.318221" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2026-02-19T20:38:26.318221" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2026-02-19T20:38:26.318221" elapsed="0.000000"/>
+</if>
+<status status="PASS" start="2026-02-19T20:38:26.318221" elapsed="0.000000"/>
+</test>
+<status status="PASS" start="2026-02-19T20:38:26.306720" elapsed="0.011501"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Return" id="s1" pass="2" fail="0" skip="0">Return</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
